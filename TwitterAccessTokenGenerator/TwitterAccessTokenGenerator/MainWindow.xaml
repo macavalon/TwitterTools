@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApplication1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Twitter Access Token Generator" Height="300" Width="600">
+    <Grid>
+        <StackPanel Margin="0,0,-2,0" Name="stackPanel1" HorizontalAlignment="Center">
+
+            <TextBlock Height="46" Name="textBlock1" Width="00" Text="Twitter Analyst" FontSize="24" />
+
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Twitter ScreenName" FontSize="14" Width="150"></TextBlock>
+                <TextBox BorderThickness="2" Width="200" Text="" Name="UserNameText"></TextBox>
+                <TextBlock Text="Status : " FontSize="14" Width="70" HorizontalAlignment="Right" Margin="10,0,0,0"/>
+                <TextBlock Text="Not Running" FontSize="14" Height="18" Width="120" Name="CurrentStatusCount" Margin="0,0,0,5"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Consumer Key" FontSize="14" Width="150"></TextBlock>
+                <TextBox BorderThickness="2" Width="200" Text="" Name="consumerkey"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Consumer Key Secret" FontSize="14" Width="150"></TextBlock>
+                <TextBox BorderThickness="2" Width="200" Text="" Name="consumerkeySecret"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="verifier" FontSize="14" Width="150"></TextBlock>
+                <TextBox BorderThickness="2" Width="200" Text="" Name="verifier"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="access token" FontSize="14" Width="150"></TextBlock>
+                <TextBox BorderThickness="2" Width="200" Text="" Name="accesskey"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="access token Secret" FontSize="14" Width="150"></TextBlock>
+                <TextBox BorderThickness="2" Width="200" Text="" Name="accesskeySecret"></TextBox>
+            </StackPanel>
+
+            <StackPanel Height="41" Name="stackPanel2" Margin="0,0,0,0" VerticalAlignment="Top" Orientation="Horizontal" Width="326" HorizontalAlignment="Center">
+                <Button Height="23" Name="GetPin" Width="150" Click="GetPinClick">Get Pin</Button>
+                <Button Height="23" Name="Authorise" Width="150" Click="AuthoriseClick">Authorise</Button>
+            </StackPanel>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
